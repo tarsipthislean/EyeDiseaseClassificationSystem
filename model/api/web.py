@@ -25,7 +25,7 @@ else:
     logging.warning("⚠️ ไม่พบ GPU ใช้งาน CPU แทน...")
 
 # โหลดโมเดล 
-model_path = "model\MobileNet\MobileNetV2_lr0.001.keras"
+model_path = "model\ResNet\Resnet_model.keras"
 try:
     model = tf.keras.models.load_model(model_path)
     logging.info("✅ โหลดโมเดลสำเร็จ!")
