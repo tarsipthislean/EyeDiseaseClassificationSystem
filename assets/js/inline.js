@@ -132,11 +132,13 @@ async function processFile(file, resultElement) {
   formData.append("file", file);
 
   try {
-    const response = await fetch(" https://a66e-2403-6200-8820-91d5-7c17-52ac-754-8fbe.ngrok-free.app/predict", {
-      method: "POST",
-      body: formData,
-    });
-    
+    const response = await fetch(
+      " https://3a53-2403-6200-8820-91d5-7c17-52ac-754-8fbe.ngrok-free.app/predict",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -154,7 +156,6 @@ async function processFile(file, resultElement) {
     resultElement.innerHTML = `<p style="color:red;">เกิดข้อผิดพลาด: ${error.message}</p>`;
   }
 }
-
 
 // ** แสดงผลลัพธ์ในรูปแบบ Progress Bar **
 function generateResultHTML(predictions) {
