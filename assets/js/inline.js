@@ -133,7 +133,7 @@ async function processFile(file, resultElement) {
 
   try {
     const response = await fetch(
-      " https://9cc5-202-29-14-126.ngrok-free.app/predict",
+      " https://a932-202-29-14-126.ngrok-free.app/predict",
       {
         method: "POST",
         body: formData,
